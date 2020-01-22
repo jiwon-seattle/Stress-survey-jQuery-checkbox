@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stress test survey</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Stress test survey</h1>
+        <h4>Dear user:</h4>
+        <h4>You will take below survey that represents your stress/anxiety levels. </h4>
+        <h4>After this, A good advice will be provided. :)</h4>
+        <h4 style="color:blue"><strong>Please Check all that apply.</strong></h4>
+      </div>
+      <form id="stress_survey">
+        <div class="form-group" id="negativeAffects_survey">
+          <p>Select the following negative affects of stress you've encountered recently.</p>
+          <input type="checkbox" name="negativeAffects" value="1">Loss of sleep<br>
+          <input type="checkbox" name="negativeAffects" value="1">Feeling overwhelmed<br>
+          <input type="checkbox" name="negativeAffects" value="1">General frustration<br>
+          <input type="checkbox" name="negativeAffects" value="1">Irritability<br>
+          <input type="checkbox" name="negativeAffects" value="1">Substance abuse<br>
+          <input type="checkbox" name="negativeAffects" value="1">Anger at others<br>
+          
+        </div>
+        <div class="form-group" id="symptoms_survey">
+          <p>Health symptoms you've noticed due to stress.</p>
+          <input type="checkbox" name="symptoms" value="1">High blood pressure<br>
+          <input type="checkbox" name="symptoms" value="1">Anxiety<br>
+          <input type="checkbox" name="symptoms" value="1">Headaches<br>
+          <input type="checkbox" name="symptoms" value="1">Dizzines<br>
+          <input type="checkbox" name="symptoms" value="1">Depression<br>
+          <input type="checkbox" name="symptoms" value="1">Hives<br>
+        </div>
+
+        <div class="form-group" id="coping_survey">
+            <p>Helpful coping mechanisims that you do.</p>
+            <input type="checkbox" name="coping" value="-1"> Meditate<br>
+            <input type="checkbox" name="coping" value="-1">Time management<br>
+            <input type="checkbox" name="coping" value="-1">Pet a cat<br>
+            <input type="checkbox" name="coping" value="-1">Exercise<br>
+            <input type="checkbox" name="coping" value="-1">manage sleep better<br>
+            <input type="checkbox" name="coping" value="-1">Booze<br>
+          </div>
+       <button type="submit">Submit Survey</button>
+      </form>
+      <span id="extreme">
+        <p><b>EXTREME</b></p>
+       <img src= "https://previews.123rf.com/images/jamesstar/jamesstar1404/jamesstar140400293/27416962-sad-face.jpg" height="250" width="250">
+      </span>
+      <br>
+      <span id="medium">
+        <p><b>MEDIUM</b></p>
+        <img src="https://cdn2.iconfinder.com/data/icons/emotion-color-line/48/emotion_pixel_perfect_color_line_icons_7-bored-512.png" height="250" width="250">
+      </span>
+      <span id="low">
+        <p><b>LOW</b></p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Mr._Smiley_Face.svg/2000px-Mr._Smiley_Face.svg.png" height="250" width="250">
+      </span>
+    </div>
+  </body>
+</html>
